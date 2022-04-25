@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+body{
+    background: #E5E5E5;
+
+}
+header h1{
+    margin: 30px 0 0 5%;
+}
+img:hover{
+    transform: scale(1.2);
+}
+main{
+    width: 100%;
+    margin: 0 auto;
+}
+.div-mensagem{
+    width:60%;
+    margin:0 auto;
+    position: absolute;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    /* identical to box height, or 48px */
+    /* Dark blue/dark-blue-300 */
+    color: #0A3871;   
+}
+input{
+    background: #E5E5E5;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    
+    /* Digite seu texto */
+    width: 65%;
+    height: 50%;
+    left: 240px;
+    top: 168px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    /* Dark blue/dark-blue-300 */
+    color: #0A3871;
+
+}
+textarea{
+    padding: 40px;
+    width: 80%;
+    height: 330px;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+.div-area{
+    /* Rectangle 1 */
+    position: absolute;
+    width: 400px;
+    left: 65%;
+    top: 10%;
+    /* White */
+    background: #FFFFFF;
+    /* shadow */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+.div-botoes{
+    width:90%;
+    margin-top: 320px;
+    margin-bottom: 100px;
+    margin-left: 95px;
+}
+#aviso{
+    margin: 30px 30px;
+    font-size: 11px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+#botao-copiar{
+    margin: 20px 10%;
+    padding: 24px;
+    width: 80%;
+    border: 1px solid #0A3871;
+    box-sizing: border-box;
+    border-radius: 24px;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+#botao-copiar:hover{
+    background: black;
+    color:white;
+    transform:scale(1.095);
+    cursor: pointer;
+}
+#botoes-criptografar{
+    /* Button */
+    /* Auto layout */
+
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    color: white;
+    position: static;
+    width: 328px;
+    height: 67px;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+    /* Dark blue/dark-blue-300 */
+
+    background: #0A3871;
+    border-radius: 24px;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 24px;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+#botoes-criptografar:hover{
+    background: black;
+    transform: scale(1.189);
+    cursor: pointer;
+}
+#botoes-descriptografar{
+    /* Button */
+    /* Auto layout */
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+
+    position: static;
+    width: 328px;
+    height: 67px;
+    left: 352px;
+    top: 0px;
+
+    /* Light gray */
+
+    background: #D8DFE8;
+    /* Dark blue/dark-blue-300 */
+
+    border: 1px solid #0A3871;
+    box-sizing: border-box;
+    border-radius: 24px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 24px;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+#botoes-descriptografar:hover{
+    border: 1px solid white;
+    background: white;
+    transform: scale(1.189);
+    cursor: pointer;
+}
+footer{
+    background: black;
+    height: 150px;
+    text-align: center;
+}
+footer ul li{
+    display: inline-block;
+    color: white;
+    margin-top: 75px;
+}
+footer ul li a{
+    color: blue;
+    text-decoration: none;
+}
+footer ul li a:hover{
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px){
+    main{
+        width:0 auto;
+    }
+    .div-mensagem{
+        width: 100%;
+        position: unset;
+        margin-left: 30px;
+        margin-top: 40px;
+    }
+    .div-botoes{
+        margin: 40px;
+    }
+    #botoes-criptografar, #botoes-descriptografar{
+        margin: 30px 35px;    
+    }
+    .div-area{
+        margin-top: 200px;
+        width: 380px;
+        position: relative;
+        left: 10%;
+    }
+    footer{
+        width: 456px;
+        padding: 20px;
+        height: 200px;
+    }
+
+}
